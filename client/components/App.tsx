@@ -6,11 +6,10 @@ function App() {
   return (
     <>
       <div>
-        <p>App Page</p>
+        <h1>Deactivate the Bomb</h1>
       </div>
-  
-        <Outlet />
 
+      <Outlet />
     </>
   )
 }
