@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
 export default function Level0Component() {
-  const [isActive, setIsActive] = useState(true)
+  const [isOnFire, setIsActive] = useState(true)
 
   function handleClick() {
-    setIsActive(!isActive)
-    console.log(isActive)
+    setIsActive(!isOnFire)
+    console.log(isOnFire)
   }
 
   return (
@@ -15,12 +15,15 @@ export default function Level0Component() {
         <img
           onClick={handleClick}
           src={
-            isActive
+            isOnFire
               ? 'client/public/images/activated-bomb.png'
               : 'client/public/images/deactivated-bomb.png'
           }
           alt="Activated bomb"
         />
+      </div>
+      <div>
+        <button className={isOnFire ? "hidden" : ""} > Proceed</button>
       </div>
     </>
   )

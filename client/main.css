@@ -8,3 +8,8 @@ img{
   width: 100px;
   height: auto
 }
+
+.hidden{
+  display: none;
+
+}
