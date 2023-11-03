@@ -5,12 +5,15 @@ import Level0Component from './Level-0'
 function App() {
   return (
     <>
-      <div>
+    
+      <header>
         <h1>Deactivate the Bomb</h1>
-      </div>
-
+      </header>
+      <div className="center">
       <Outlet />
+      </div>
     </>
+    
   )
 }
 
