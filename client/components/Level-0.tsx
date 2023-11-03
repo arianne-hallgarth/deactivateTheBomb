@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import bombTicking from 'client/public/Bomb-ticking .mp3'
+import bombTicking from '../public/Bomb-ticking .mp3'
 
 export default function Level0Component() {
   const [isOnFire, setIsActive] = useState(true)
@@ -11,14 +11,18 @@ export default function Level0Component() {
   ]
 
   //define const for the audio file
+  const audio = new Audio(bombTicking)
 
-  //
+  function handleStart() {
+    audio.play() // Start playing the audio when the "Start" button is clicked
+  }
 
   function handleClick() {
     setIsActive(!isOnFire)
-    console.log(isOnFire)
 
-    //
+    if (isOnFire) {
+      audio.pause()
+    }
   }
 
   return (
@@ -34,6 +38,7 @@ export default function Level0Component() {
       <Link to="/level1">
         <button className={isOnFire ? 'hidden' : ''}>Proceed</button>
       </Link>
+      <button onClick={handleStart}>Start</button>
     </>
   )
 }
