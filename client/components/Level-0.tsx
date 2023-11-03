@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-
+import bombTicking from 'client/public/Bomb-ticking .mp3'
 
 export default function Level0Component() {
   const [isOnFire, setIsActive] = useState(true)
@@ -10,9 +10,15 @@ export default function Level0Component() {
     'client/public/images/deactivated-bomb.png',
   ]
 
+  //define const for the audio file
+
+  //
+
   function handleClick() {
     setIsActive(!isOnFire)
     console.log(isOnFire)
+
+    //
   }
 
   return (
@@ -25,7 +31,7 @@ export default function Level0Component() {
           alt="Activated bomb"
         />
       </div>
-      <Link to ='/level1'>
+      <Link to="/level1">
         <button className={isOnFire ? 'hidden' : ''}>Proceed</button>
       </Link>
     </>
