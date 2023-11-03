@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-
 export default function Level1Component() {
   const [isOnFire, setIsActive] = useState(true)
 
@@ -15,30 +14,32 @@ export default function Level1Component() {
     console.log(isOnFire)
   }
 
-  //make 2 enveloping divs, the bottom's class = bottomRight
- //We need "404 Not Found" <h2> and give it a class name to make it bigger
- //p tag which has the page not found message
- //contunue button and we need to change the link so it links level2
- // change the class name of the image to be "tiny"
- //in CSS make the image tiny
- //make the image appear bottom right
-
-
+  //in CSS make the image tiny
+  //make the image appear bottom right
 
   return (
     <>
-      <Link to ='/level1'>
-        <button className={isOnFire ? 'hidden' : ''}>Proceed</button>
-      </Link>
+      <div>
+        <h2 className="errorText">404 Not Found</h2>
+        <p>
+          We are so sorry. We can't find the page that you are looking for. It's
+          been a rough day and we are having trouble thinking clearly right now.
+          Maybe you could try making your own goddamn page. Hope you like that
+          growth feedback.
+        </p>
+        <Link to="/level2">
+          <button className={isOnFire ? 'hidden' : ''}>Proceed</button>
+        </Link>
+      </div>
 
-      <div className="bombDiv">
+      <div className="bottomRight">
         <img
+          className="tiny"
           onClick={handleClick}
           src={isOnFire ? bombFiles[0] : bombFiles[1]}
           alt="Activated bomb"
-          />
+        />
       </div>
-
     </>
   )
 }
