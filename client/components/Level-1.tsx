@@ -19,7 +19,7 @@ export default function Level1Component() {
 
   return (
     <>
-      <div>
+      <div className="errorDiv">
         <h2 className="errorText">404 Not Found</h2>
         <p>
           We are so sorry. We can't find the page that you are looking for. It's
