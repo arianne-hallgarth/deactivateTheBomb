@@ -6,7 +6,11 @@ body {
 
 img{
   width: 100px;
-  height: auto
+  height: auto;
+}
+
+img:hover {
+  width: 110px;
 }
 
 .hidden{
@@ -36,6 +40,7 @@ align-items: center;
 height: 350px;
 display:flex;
 justify-content: right;
+width: 100%;
 align-items:end;
 }
 
@@ -47,11 +52,19 @@ header{
   display: flex;
   justify-content: center;
   font-family: 'Kenia';
-  background-color: maroon;
+  background-color: rgb(128, 0, 0);
   color: white;
   padding: 0;
 }
 
+h2 {
+  font-family: 'Courier';
+  margin-top: 50px; 
+}
+
+body {
+  background-color: rgba(238, 141, 141, 0.644);
+}
 /* latin */
 @font-face {
   font-family: 'Kenia';
