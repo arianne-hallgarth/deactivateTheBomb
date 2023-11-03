@@ -9,9 +9,9 @@ img{
   height: auto;
 }
 
-/* img:hover {
+img:hover {
   width: 110px;
-} */
+}
 
 .hidden{
   display: none;
@@ -46,6 +46,10 @@ align-items:end;
 
 .tiny {
   width: 30px;
+}
+
+img.tiny:hover {
+  width: 40px;
 }
 
 header{
