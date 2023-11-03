@@ -9,9 +9,9 @@ img{
   height: auto;
 }
 
-img:hover {
+/* img:hover {
   width: 110px;
-}
+} */
 
 .hidden{
   display: none;
