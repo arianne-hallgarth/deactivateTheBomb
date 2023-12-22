@@ -1,5 +1,9 @@
 # React Boilerplate
 
+## Preface
+
+This project is a group project where we were required to create just literally anything so long as it involves React. I am planning on expanding this project to create more features and turn it into an exciting game. One of my facilitator is keen on working with me on this one, we are yet to discuss on what we want in specifics.
+
 ## Packages Included
 
 - react
